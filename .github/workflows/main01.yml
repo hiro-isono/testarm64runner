@@ -1,6 +1,8 @@
 name: main01.yaml
+on: [push]
 jobs:
-  runs-on: self-hosted
+  TEST01:
+    runs-on: self-hosted
     steps:
       - run: lscpu
       - run: echo "Run on N1DSP"
