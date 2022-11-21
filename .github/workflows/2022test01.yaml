@@ -1,0 +1,8 @@
+name: 2022test01
+on: [push]
+jobs:
+  test-jobs:
+    runs-on: self-hosted
+    steps:
+      - run: lscpu
+      - run: gcc -v
